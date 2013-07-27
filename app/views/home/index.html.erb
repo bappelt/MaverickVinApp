@@ -1,0 +1,16 @@
+<%= form_tag '/home/decode_vin', :remote => true do -%>
+      <ol>
+        <li>
+          <label>Enter the VIN to be decoded</label>
+        </li>
+        <li>
+          <%= text_field_tag 'vin' %>
+        </li>
+      </ol>
+
+    <%= submit_tag 'submit', id: 'vin-submit' %>
+<% end -%>
+
+<div id='vehicle'>
+
+</div>

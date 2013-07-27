@@ -1,0 +1,10 @@
+<% if @vehicle.valid? %>
+    <ul>
+      <li><%= @vehicle.year %> <%= @vehicle.body %></li>
+      <li>Engine: <%= @vehicle.engine %></li>
+      <li>Plant: <%= @vehicle.plant %></li>
+      <li>Unit Number: <%= number_with_delimiter @vehicle.unit_number %></li>
+    </ul>
+<% else %>
+    <h1> Invalid VIN </h1>
+<% end %>

@@ -1,0 +1,45 @@
+header#page_header {
+  background-color: #bc471d;
+  color: #fff;
+  height: 68px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 10px 20px;
+
+  #logo {
+    position: absolute;
+    top: 15px;
+    height: 60px;
+  }
+}
+
+footer#page_footer {
+  background-color: #bc471d;
+  border-bottom: 10px solid #4c2719;
+  color: #fff;
+  font-size: 0.7em;
+  height: 20px;
+  padding: 0px 20px;
+
+  ul {
+    margin-left: -10px;
+    padding: 0;
+    li {
+      display: inline;
+      margin: 0;
+      &:last-child {
+        border-right: none;
+      }
+    }
+    li#copy {
+      float: right;
+    }
+  }
+}
+
+div#vehicle {
+
+  ul li {
+    color: #000000;
+  }
+}
