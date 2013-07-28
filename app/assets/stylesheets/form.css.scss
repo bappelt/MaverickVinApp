@@ -1,18 +1,25 @@
+form {
+  margin: 10px;
+}
+
 label {
-  display: inline;
+  display: inline-block;
 }
 
 ol {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
+  width: auto;
   input {
     font-size: 2em;
-    display: inline;
+    display: inline-block;
+    margin: 5px;
   }
 
 }
 
 #vin-submit {
   position: relative;
+  display: inline-block;
 }
 
