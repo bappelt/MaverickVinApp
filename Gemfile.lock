@@ -50,7 +50,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    maverick_vin_parser (1.1.1)
+    maverick_vin_parser (1.1.2)
     mime-types (1.23)
     multi_json (1.7.7)
     polyglot (0.3.3)
