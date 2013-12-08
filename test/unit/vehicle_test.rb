@@ -5,16 +5,17 @@ class VehicleTest < ActiveModel::TestCase
   include ActiveModel::Lint::Tests
 
   def setup
-      @model = Vehicle.new('4K91L125113')
+    #necessary for activemodel lint tests
+    @model = Vehicle.new( vin: '4K91L125113' )
   end
 
   def test_new
-    @vehicle = Vehicle.new('4K91L125113')
+    @vehicle = Vehicle.new( vin: '4K91L125113' )
     puts @vehicle.inspect
-    assert_not_nil @vehicle.year
-    assert_not_nil @vehicle.body
-    assert_not_nil @vehicle.engine
-    assert_not_nil @vehicle.plant
-    assert_not_nil @vehicle.unit_number
+    assert_equal 1974, @vehicle.year
+    assert_equal 'Maverick 2-Door Sedan Standard', @vehicle.body
+    assert_equal '250ci 6-Cylinder 1 bbl', @vehicle.engine
+    assert_equal 'Kansas City', @vehicle.plant
+    assert_equal 25113, @vehicle.unit_number
   end
 end
