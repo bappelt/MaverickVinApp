@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-
+gem 'thin'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:

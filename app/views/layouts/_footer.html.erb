@@ -1,7 +1,7 @@
 <footer id="page_footer">
 
   <ul>
-    <li><%= mail_to 'mavvin@mystreetmachine.com', 'Contact' %></li>
+    <li><%= mail_to ENV['CONTACT_EMAIL'], 'Contact' %></li>
     <li id="copy">&copy; 2013 MyStreetMachine.com LLC, All Rights Reserved</li>
   </ul>
 
