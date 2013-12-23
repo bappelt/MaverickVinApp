@@ -22,6 +22,7 @@ end
 
 group :development, :test do
   gem 'test-unit'
+  gem 'coveralls', require: false
 end
 
 gem 'jquery-rails'
