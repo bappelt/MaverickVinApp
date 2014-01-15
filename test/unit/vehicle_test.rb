@@ -10,6 +10,7 @@ class VehicleTest < ActiveModel::TestCase
   end
 
   def test_new
+    fail
     @vehicle = Vehicle.new( vin: '4K91L125113' )
     puts @vehicle.inspect
     assert_equal 1974, @vehicle.year
